@@ -1,3 +1,10 @@
-const perrazo = "shocpenhuawue"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import AppRouter from './AppRouter';
+import "./index.css";
 
-perrazo = 'linguang'
+
+ReactDOM.render(
+  <AppRouter/>,
+  document.getElementById('root')
+);

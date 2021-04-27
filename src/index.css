@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Sansita One";
+  src:local('Sansita One'), url(./assets/Fonts/SansitaOne.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src:local('Quicksand'), url(./assets/Fonts/Quicksand.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Rock Salt";
+  src:local('Rock Salt'), url(./assets/Fonts/RockSalt.ttf) format('truetype');
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
