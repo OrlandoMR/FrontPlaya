@@ -1,30 +1,58 @@
-.navbar{
-  background-color: #3C3838;
-  display:flex;
-  align-items:center;
-  height:8vh;
-  padding:0 2rem;
-
-}
-.navbar-brand{
-  color: #FFFACA;
-  font-family: "Sansita One";
-  font-size:32px;
-  margin-right: 4rem;
-}
-.navbar-item{
-  color: #FFFFFF;
-  font-family: "Quicksand";
-  font-size:20px;
+.dialogContainer {
+    width: 50vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.sub-navbars{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  width:100%;
+.input {
+    width: 70%;
+    margin-bottom: 15px !important;
+    font-family: Quicksand !important;
 }
 
-.navbar-rigth .navbar-item{
+.navbar {
+    background-color: #3C3838;
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    padding: 0 2rem;
+}
+
+.navbar-brand {
+    color: #FFFACA;
+    font-family: "Sansita One";
+    font-size: 32px;
+    margin-right: 4rem;
+}
+
+.navbar-item {
+    color: #FFFFFF;
+    font-family: "Quicksand";
+    font-size: 20px;
+}
+
+.sub-navbars {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-rigth .navbar-item {
     margin-left: 2rem;
+}
+
+.var {
+    margin-left: 15px;
+}
+
+.error {
+    margin-bottom: 15px;
+}
+
+a {
+    cursor: pointer;
 }

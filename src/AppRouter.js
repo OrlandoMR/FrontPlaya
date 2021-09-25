@@ -7,7 +7,6 @@ import Inicio from "./views/inicio/Inicio";
 import Pago from "./views/pago/Pago";
 import Plan from "./views/plan/Plan";
 import Registro from "./views/registro/Registro";
-import Comentario from "./views/comentario/Comentario";
 
 const AppRouter = (props) => {
   return (
@@ -21,7 +20,6 @@ const AppRouter = (props) => {
 
       <Switch>
         <Route exact path="/inicio" component={Inicio}/>
-        <Route exact path="/comentario" component={Comentario}/>
         <Route exact path="/pago" component={Pago}/>
         <Route exact path="/plan" component={Plan}/>
         <Route exact path="/registro" component={Registro}/>

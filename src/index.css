@@ -1,18 +1,49 @@
 @font-face {
-  font-family: "Sansita One";
-  src:local('Sansita One'), url(./assets/Fonts/SansitaOne.ttf) format('truetype');
+    font-family: "Sansita One";
+    src: local('Sansita One'), url(./assets/Fonts/SansitaOne.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Quicksand";
-  src:local('Quicksand'), url(./assets/Fonts/Quicksand.ttf) format('truetype');
+    font-family: "Quicksand";
+    src: local('Quicksand'), url(./assets/Fonts/Quicksand.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: "Rock Salt";
-  src:local('Rock Salt'), url(./assets/Fonts/RockSalt.ttf) format('truetype');
+    font-family: "Rock Salt";
+    src: local('Rock Salt'), url(./assets/Fonts/RockSalt.ttf) format('truetype');
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+.outerContainer {
+    height: 92vh;
+    position: relative;
+}
+
+Button {
+    font-family: Quicksand !important;
+    text-transform: none !important;
+    background-color: #ABEDFC !important;
+    color: #000000 !important;
+    font-size: 24px !important;
+}
+
+h1 {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+p {
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
 }

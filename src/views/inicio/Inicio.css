@@ -1,0 +1,33 @@
+.banner {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./beach.png);
+    background-size: cover;
+}
+
+.relax {
+    font-family: "Rock Salt";
+    color: #FFFACA;
+}
+
+.infoContainer {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    justify-content: center;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonReservar {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
