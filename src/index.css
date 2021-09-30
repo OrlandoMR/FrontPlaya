@@ -24,6 +24,12 @@ a:active {
     position: relative;
 }
 
+* {
+    /* margin: 0px;
+    padding: 0px; */
+    box-sizing: border-box;
+}
+
 Button {
     font-family: Quicksand !important;
     text-transform: none !important;

@@ -31,7 +31,7 @@ const Plan = (props) => {
   return (
     <div className="outerContainer">
       <div className="title">
-        <h1>Escoge tu plan</h1>
+        <h1> Escoge tu plan </h1>
       </div>
       <div className="planes">
         {planes.map((plan) => {
@@ -41,23 +41,16 @@ const Plan = (props) => {
                 <div className="imgContainer">
                   <img src={plan.img} alt="" />
                 </div>
-
-                <ul className="fa-ul">
+                <ul>
+                  
                   {plan.desc.map((desc) => {
-                    return (
-                      <li>
-                        <span className="fa-li">
-                          <i className="fas fa-check"></i>
-                        </span>
-                        {desc}
-                      </li>
-                    );
+                    return <li>{desc} </li>;
                   })}
                 </ul>
               </div>
-              <h2>{plan.nombre}</h2>
+              <h2> {plan.nombre} </h2>
               <Button variant="contained" disableElevation>
-               Quiero este
+                Quiero este
               </Button>
             </div>
           );

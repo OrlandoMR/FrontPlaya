@@ -24,6 +24,11 @@
 .buttonContainer {
     display: flex;
     justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.spacer {
+    margin: 2rem 0;
 }
 
 .buttonReservar {

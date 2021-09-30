@@ -12,8 +12,8 @@ const Inicio = (props) => {
         <h1 className="relax">VEN A RELAJARTE</h1>
       </div>
       <div className="infoContainer">
-        <h1>¡Reserva tu carpa ya!</h1>
-        <hr/>
+        <h1 >¡Reserva tu carpa ya!</h1>
+        <hr className="spacer"/>
         <p>
           En Umbrella Corp. nos interesa que las personas que llegan a nuestros
           servicios sean bien atendidos y con la mayor confianza posible.
