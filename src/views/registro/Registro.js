@@ -1,66 +1,81 @@
 import React from "react";
-// import sombrilla from "./sombrilla.PNG";
+import { useForm } from "../../Hooks/useForm";
 import "./Registro.css";
 
-const Registro = (props) => {
+
+export const Registro = () => {
+  
+  const [formValues, handleInputChange] = useForm({
+    nombre: '',
+    email: '',
+    contra: '',
+    confcontra: ''
+  });
+  
+  const {nombre, email, contra, confcontra}= formValues;
+  
+  const handleSubmit = (e) =>{
+    // evita que se recarge la pag
+    e.preventDefault();
+    console.log(formValues)
+  }
+  
+  
+  
+  
   return (
-    <section class="contact-box">
-      <div id="grande" className="App">
-        <p>
-          <center>
-            <h1> Regístrate y ven a </h1> <br></br> <h1> disfrutar </h1>
-          </center>
-        </p>
-        <div id="formulario" classname="formulario" class="contenedor">
-          <div id="datos" class="input-contenedor center" classname="jaja">
-            <i class="fas fa-envelope icon"> </i>
-            <label class="font-weight-bold">
-              
-              Correo Electrónico <span class="text-danger">: </span>
-            </label>
-            <input type="email" id="aaa" class="box" />
-          </div>
-
-          <div id="datos" class="input-contenedor center" classname="jaja">
-            <i class="fas fa-key icon"> </i>
-            <label class="font-weight-bold">
-              
-              Contraseña <span class="text-danger">: </span>
-            </label>
-            <input type="password" id="aaa" class="box" />
-          </div>
-
-          <div id="datos" class="input-contenedor center" classname="jaja">
-            <i class="fas fa-key icon"> </i>
-            <label class="font-weight-bold">
-              
-              Verificar contraseña <span class="text-danger">: </span>
-            </label>
-             <input type="password" id="aaa" class="box" />
-          </div>
-
-          <div id="datos" class="input-contenedor center" classname="jaja">
-            <i class="fas fa-user icon"> </i>
-            <label class="font-weight-bold">
-              
-              Nombre completo <span class="text-danger">: </span>
-            </label>
-            <input type="text" id="aaa" class="box" />
-          </div>
-
-          <input type="submit" value="Registrarse" Class="button center" />
-        </div>
-        <div id="imagen" classname="imagen">
-          <img
-            id="foto"
-            
-            classname="App-logo"
-            alt="Sombrilla"
-            class="center"
-          />
-        </div>
+    
+    <div className="outerContainer">
+      <div className="title"> 
+        <h1> Registrate y ven a disfrutar </h1>
       </div>
-    </section>
+
+        <form onSubmit={ handleSubmit}>
+{/* nombre */}
+          <div className="form-group">
+            <input type="text"
+              name="nombre"
+              className="form-control"
+              placeholder="Tu nombre"
+              value={nombre}
+              onChange={ handleInputChange } />
+          </div>
+{/* email */}
+          <div className="form-group">
+            <input type="text"
+              name="email"
+              className="form-control"
+              placeholder="Tu email"
+              autoComplete="off"
+              value={email}
+              onChange={ handleInputChange } />
+          </div>
+{/* contra */}
+          <div className="form-group">
+            <input type="password"
+              name="contra"
+              className="form-control"
+              placeholder="*****"
+              value={contra}
+              onChange={ handleInputChange } />
+          </div>
+{/* CONFcON  */}
+          <div className="form-group">
+            <input type="password"
+              name="confcontra"
+              className="form-control"
+              placeholder="*****"
+              value={confcontra}
+              onChange={ handleInputChange } />
+          </div>
+          
+          <button type='submit' variant="contained" disableElevation>
+            Registrarme
+          </button>
+        </form>
+        {(contra === confcontra) ? null : "Las contraseñas no coinciden"}
+        
+    </div>
   );
 };
 
