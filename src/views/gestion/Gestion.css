@@ -1,0 +1,20 @@
+.outerContainer.p2 {
+    padding: 2rem;
+}
+
+.titleAdmin {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.iconSp {
+    margin-right: 16px !important;
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}

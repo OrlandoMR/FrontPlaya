@@ -115,6 +115,16 @@ const Navbar = (props) => {
               Gestión
             </NavLink>
           ) : null}
+          {rol === "ADMIN_ROLE" ? (
+            <NavLink
+              activeClassName="active"
+              className="navbar-item var"
+              exact="exact"
+              to="/pagos"
+            >
+              Pagos
+            </NavLink>
+          ) : null}
         </div>
 
         <div className="navbar-rigth">

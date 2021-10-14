@@ -33,9 +33,13 @@ a:active {
 Button {
     font-family: Quicksand !important;
     text-transform: none !important;
-    background-color: #ABEDFC !important;
     color: #000000 !important;
     font-size: 24px !important;
+    background-color: #ABEDFC !important;
+}
+
+Button.Mui-disabled {
+    background-color: #FFFACA !important;
 }
 
 h1 {
@@ -52,4 +56,19 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
+}
+
+.button {
+    width: 140px;
+    height: 50px;
+    background-color: #ABEDFC;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: large;
+    background-size: 10px;
+    border-radius: 1px;
+}
+
+input {
+    height: 25px;
 }
